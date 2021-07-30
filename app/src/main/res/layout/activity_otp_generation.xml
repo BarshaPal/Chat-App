@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".otpGeneration">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="50dp">
+<com.hbb20.CountryCodePicker
+    android:id="@+id/cpp"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+   />
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="278dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:layout_weight="1"
+        android:inputType="phone"
+        android:hint="Enter Number"
+        />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/generateOTP"
+        android:layout_width="141dp"
+        android:layout_height="59dp"
+        android:text="Generate OTP"/>
+
+</LinearLayout>
